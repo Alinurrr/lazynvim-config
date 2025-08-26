@@ -28,6 +28,7 @@ return {
       -- list of servers for mason to install
       ensure_installed = {
         "ts_ls",
+        "volar",
         "html",
         "cssls",
         "tailwindcss",
@@ -37,6 +38,7 @@ return {
         "emmet_ls",
         "prismals",
         "eslint",
+        "vlts",
       },
     })
 

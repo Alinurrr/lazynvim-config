@@ -95,11 +95,20 @@ return {
     })
 
     vim.lsp.config("emmet_ls", {
-      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte", "vue" },
+    })
+
+    vim.lsp.config("volar", {
+      filetypes = { "vue", "typescript", "javascript" },
+      init_options = {
+        vue = {
+          hybridMode = false,
+        },
+      },
     })
 
     vim.lsp.config("eslint", {
-      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte", "vue" },
     })
 
     vim.lsp.config("lua_ls", {
