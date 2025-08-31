@@ -39,6 +39,7 @@ return {
         "prismals",
         "eslint",
         "vlts",
+        "gopls",
       },
     })
 
@@ -47,6 +48,9 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "eslint_d",
+        "goimports", -- go import formatter
+        "gofumpt", -- go formatter
+        "delve", -- go debugger
       },
     })
   end,

@@ -26,6 +26,7 @@ return {
         "markdown",
         "markdown_inline",
         "svelte",
+        "vue",
         "graphql",
         "bash",
         "lua",
@@ -35,6 +36,10 @@ return {
         "query",
         "vimdoc",
         "c",
+        "go",
+        "gomod",
+        "gowork",
+        "gosum",
       },
       incremental_selection = {
         enable = true,

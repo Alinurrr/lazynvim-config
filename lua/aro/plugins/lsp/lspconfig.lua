@@ -124,5 +124,19 @@ return {
         },
       },
     })
+
+    vim.lsp.config("gopls", {
+      settings = {
+        gopls = {
+          completeUnimported = true,
+          usePlaceholders = true,
+          analyses = {
+            unusedparams = true,
+          },
+          staticcheck = true,
+          gofumpt = true,
+        },
+      },
+    })
   end,
 }
