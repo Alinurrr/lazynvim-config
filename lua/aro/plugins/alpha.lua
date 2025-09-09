@@ -62,7 +62,14 @@ return {
     -- Disable folding on alpha buffer and recalculate padding on resize
     vim.cmd([[
       autocmd FileType alpha setlocal nofoldenable
-      autocmd VimResized * if &filetype == 'alpha' | lua require('alpha').redraw() | endif
     ]])
+    
+    vim.api.nvim_create_autocmd("VimResized", {
+      callback = function()
+        if vim.bo.filetype == 'alpha' then
+          pcall(require('alpha').redraw)
+        end
+      end,
+    })
   end,
 }
